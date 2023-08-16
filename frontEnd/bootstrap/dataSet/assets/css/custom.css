@@ -32,6 +32,12 @@ a {
     -o-transition: all 0.2s ease-in !important;
 }
 
+td,
+th {
+    padding: 10px 30px !important;
+    vertical-align: middle;
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +75,11 @@ h6 {
 
 /*      sidebar menu
 -----------------------------------------------*/
+.logo {
+    min-height: 65.5px;
+    display: flex;
+    align-items: center;
+}
 .sidebar-menu a:hover {
     background-color: var(--secondary-50-color);
 }
@@ -78,4 +89,32 @@ h6 {
 }
 .content {
     background-color: var(--secondary-color);
+    position: relative;
+}
+
+.sidebar.bg-white.position-fixed {
+    width: 16.64%;
+}
+.topbar {
+    width: calc(100% - 16.64%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 80px 0 #0002;
+    z-index: 888;
+}
+.border-top {
+    border-color: #0001 !important;
+}
+.color-primary {
+    color: var(--primary-color);
+}
+.table {
+    background-color: #ffffff;
+}
+.table td {
+    cursor: pointer;
+}
+.table tr:hover td {
+    background-color: #f7f4f3 !important;
 }

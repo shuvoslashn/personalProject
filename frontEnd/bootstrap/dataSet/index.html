@@ -20,13 +20,13 @@
                 <div class="row">
                     <div class="col-md-2 p-0">
                         <!---------  Sidebar Start  --------->
-                        <div class="sidebar bg-white">
+                        <div class="sidebar bg-white position-fixed">
                             <div class="d-flex flex-column align-content-between justify-content-between min-vh-100">
                                 <!-- sidebar top start -->
                                 <div class="sidebar-top">
                                     <!-- logo here -->
                                     <div class="logo px-4 py-2">
-                                        <img src="./assets/img/logo.png" alt="" width="150" />
+                                        <img src="./assets/img/logo.png" alt="" width="120" />
                                     </div>
                                     <!-- sidebar menu start -->
                                     <div class="sidebar-menu d-flex flex-column">
@@ -50,11 +50,11 @@
                                             <i class="ri-sensor-line"></i>
                                             <span>Sensors</span>
                                         </a>
-                                        <a href="#" class="d-flex gap-2 px-4 py-3 border-top border-bottom">
+                                        <a href="#" class="d-flex gap-2 px-4 py-3 border-top">
                                             <i class="ri-file-list-3-line"></i>
                                             <span>SLA</span>
                                         </a>
-                                        <a href="#" class="d-flex gap-2 px-4 py-3 border-top border-bottom">
+                                        <a href="#" class="d-flex gap-2 px-4 py-3 border-top">
                                             <i class="ri-line-chart-line"></i>
                                             <span>Graph</span>
                                         </a>
@@ -107,13 +107,347 @@
                                 <!-- topbar end -->
 
                                 <!-- Dataset area start -->
-                                <div class="dataset p-4">
+                                <div class="dataset p-5 mt-5">
                                     <!-- dataset top area start -->
                                     <div class="dataset-top d-flex justify-content-between">
                                         <h3>Dataset Selection</h3>
                                         <a href="#" class="btn btn-custom">Add Dataset</a>
                                     </div>
                                     <!-- dataset top area end -->
+
+                                    <!-- dataset content start -->
+                                    <div class="dataset-content mt-4">
+                                        <!-- dataset header start -->
+                                        <div class="dataset-header">
+                                            <ul class="nav nav-tabs border-bottom-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#"
+                                                        >By Dataset Class</a
+                                                    >
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-secondary" href="#">For Instance TS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- dataset header end -->
+
+                                        <!-- dataset lists start -->
+                                        <table class="table border ">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dataset Class</th>
+                                                    <th scope="col" class="w-25">Max instance TS</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-1 fw-semibold">raw.Billing</p>
+                                                    <p class="small mb-2">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Facilis, illo officia! Id recusandae eius ullam voluptates a,
+                                                        perferendis laudantium, distinctio.
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-medium small"
+                                                        >2023-04-18 <br />
+                                                        00:00:00</span
+                                                    >
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- dataset lists end -->
+                                    </div>
+                                    <!-- dataset content end -->
                                 </div>
                                 <!-- Dataset area end -->
                             </div>
