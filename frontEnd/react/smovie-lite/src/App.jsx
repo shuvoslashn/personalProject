@@ -1,10 +1,19 @@
-import React from 'react';
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SingleMovie from './pages/SingleMovie';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
     return (
-        <div>
-            <h1>App</h1>
-        </div>
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='movie/:id' element={<SingleMovie />} />
+                    <Route path='*' element={<PageNotFound />} />
+                </Routes>
+            </BrowserRouter>
+        </>
     );
 };
 
