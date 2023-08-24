@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Playing</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
+    <body class="dark:bg-gray-900 bg-white">
+        <div class="h-screen">
+            <button onclick="tgl()" class="self-start bg-amber-400 px-12 py-4 font-bold">Dark Mood</button>
+
+            <div class="flex h-[80vh] items-center justify-center">
+                <h1 class="text-8xl font-black text-black">Hello</h1>
+            </div>
+        </div>
+
+        <script>
+            const btn = document.querySelector('button');
+            const tgl = () => {
+                btn.addEventListener('click', () => {
+                    document.querySelector('html').classList.toggle('dark');
+                });
+            };
+        </script>
+    </body>
+</html>
