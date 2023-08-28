@@ -25,14 +25,14 @@ const Home = () => {
                     return (
                         <div className='basis-60 flex-grow p-8 shadow-2xl flex justify-between flex-col' key={p.id}>
                             <img src={p.image} alt={p.title} className='h-60' />
-                            <div className=''>
-                                <h4 className='font-xl font-medium'>{p.title} item</h4>
-                                <div className=''>
-                                    <p>Price: {p.price}</p>
+                            <div className='pt-8'>
+                                <h4 className='font-xl font-medium'>{p.title.slice(0, 15)} item</h4>
+                                <div className='flex justify-between items-center py-2'>
                                     <p>
-                                        Rating: {p.rating.rate}
-                                        {console.log(rating)}
-                                        <Rating readonly={true} initialValue={3} />
+                                        Price: <b className='font-bold'>${p.price}</b>
+                                    </p>
+                                    <p>
+                                        Rating: <b className='font-bold'>{p.rating.rate}</b>
                                     </p>
                                 </div>
                                 <a
