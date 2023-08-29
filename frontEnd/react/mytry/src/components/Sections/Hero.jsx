@@ -23,7 +23,7 @@ const Hero = () => {
                         iste mollitia rem nemo dolor, officia culpa nobis, assumenda delectus similique voluptates?
                         Eaque corrupti laboriosam quasi nisi.
                     </p>
-                    <div className='flex gap-4 mt-8'>
+                    <div className='flex gap-4 mt-8 justify-center md:justify-start'>
                         <button
                             onClick={handleIncrease}
                             className='inline-block py-3 text-[14px] font-bold px-8 bg-blue-600 hover:bg-blue-700 duration-300 text-white uppercase shadow-lg rounded-full shadow-blue-300'
@@ -32,7 +32,11 @@ const Hero = () => {
                         </button>
                         <button
                             onClick={handleDecrease}
-                            className='inline-block py-3 text-[14px] font-bold px-8 border border-blue-600 hover:bg-blue-700 duration-300 text-blue-600 uppercase hover:shadow-lg rounded-full hover:shadow-blue-300 hover:text-white'
+                            className={`inline-block py-3 text-[14px] font-bold px-8 border  ${
+                                counter.count > 0
+                                    ? 'hover:bg-blue-700 border-blue-600 text-blue-600 hover:shadow-blue-300'
+                                    : 'hover:bg-gray-400 border-gray-400 text-gray-400 hover:shadow-gray-300'
+                            } duration-300  uppercase hover:shadow-lg rounded-full  hover:text-white`}
                         >
                             Decrease
                         </button>
