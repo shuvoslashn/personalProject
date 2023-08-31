@@ -6,25 +6,29 @@
         <title>Document</title>
         <!-- remix icon -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- animate css cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!-- main css -->
         <link rel="stylesheet" href="./css/main.css" />
     </head>
-    <body class="">
+    <body>
         <!---------  Header Area Start  --------->
         <header class="absolute w-full">
             <div class="container">
                 <nav class="flex items-center justify-between py-3 h-20">
                     <!-- logo -->
-                    <img src="./img/logo.png" alt="logo" />
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
 
                     <!-- menu -->
                     <ul class="hidden md:flex items-center gap-6 menu duration-300">
-                        <li><a href="#" class="menu-item py-2">Home</a></li>
-                        <li><a href="#" class="menu-item py-2">About</a></li>
-                        <li><a href="#" class="menu-item py-2">Projects</a></li>
-                        <li><a href="#" class="menu-item py-2">Expertise</a></li>
-                        <li><a href="#" class="menu-item py-2">Blog</a></li>
-                        <li><a href="#" class="btn-sm">Contact Us</a></li>
+                        <li><a href="#home" class="menu-item py-2">Home</a></li>
+                        <li><a href="#about" class="menu-item py-2">About</a></li>
+                        <li><a href="#projects" class="menu-item py-2">Projects</a></li>
+                        <li>
+                            <a href="#testimonial" class="menu-item py-2">Testimonial</a>
+                        </li>
+                        <li><a href="#blog" class="menu-item py-2">Blog</a></li>
+                        <li><a href="#getintouch" class="btn-sm">Get In Touch</a></li>
                     </ul>
 
                     <!-- hamburger -->
@@ -42,12 +46,14 @@
         <!---------  Header Area End  --------->
 
         <!---------  Hero Area Start  --------->
-        <section class="w-full h-screen bg-[url('./../img/heroBG.png')] bg-center bg-cover bg-no-repeat">
+        <section id="home" class="w-full h-screen bg-[url('./../img/heroBG.png')] bg-center bg-cover bg-no-repeat">
             <div class="bg-gray-900/50 w-full h-full">
                 <div class="container w-full h-full flex flex-col justify-center items-center text-center">
                     <div class="max-w-[650px]">
-                        <h4 class="text-white font-semibold tracking-[5px] mb-3">We Create Digital Products</h4>
-                        <h1 class="text-white text-4xl font-bold">Introduce Our Creative Agency.</h1>
+                        <h4 class="text-white font-semibold tracking-[5px] mb-3 leading-5 uppercase animate__fadeInUp">
+                            We Create Digital Products
+                        </h4>
+                        <h1 class="leading-[140%] text-white text-4xl font-bold">Introduce Our Creative Agency.</h1>
                         <p class="text-[#fff7] mt-4 mb-6">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quia quos repellendus
                             cum volu vel neque modi earum expedita.
@@ -60,7 +66,7 @@
         <!---------  Hero Area End  --------->
 
         <!---------  About Area Start  --------->
-        <section id="about" class="py-12 md:py-24">
+        <section id="about" class="py-24">
             <div class="container">
                 <div class="max-w-[850px] mx-auto text-center">
                     <h2 class="title-text">Welcome to our agency</h2>
@@ -75,7 +81,7 @@
         <!---------  About Area End  --------->
 
         <!---------  Project Area Start  --------->
-        <section id="projects" class="py-12 md:py-24 bg-gray-100">
+        <section id="projects" class="py-24 bg-gray-100">
             <div class="container">
                 <h2 class="title-text">Featured Projects</h2>
                 <!-- project boxs -->
@@ -143,6 +149,210 @@
             </div>
         </section>
         <!---------  Project Area End  --------->
+
+        <!---------  Testimonial Area Start  --------->
+        <section id="testimonial" class="py-24">
+            <div class="container flex flex-col gap-8 md:flex-row">
+                <!-- single testimonial -->
+                <div class="pb-8 md:pb-0 text-center md:text-left">
+                    <img src="./img/stripe.png" alt="stripe" class="mx-auto md:mx-0" />
+                    <p class="py-4">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt est animi nemo autem
+                        necessitatibus laudantium cumque consequatur optio sed recusandae ipsa atque officia distinctio
+                        a quas consequuntur, quidem aspernatur laboriosam."
+                    </p>
+                    <h3 class="font-semibold text-gray-700">Roger Waters</h3>
+                    <h6 class="text-[13px]">Head of Design</h6>
+                </div>
+                <!-- single testimonial -->
+                <div class="text-center md:text-left">
+                    <img src="./img/dribbble.png" alt="stripe" class="mx-auto md:mx-0" />
+                    <p class="py-4">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt est animi nemo autem
+                        necessitatibus laudantium cumque consequatur optio sed recusandae ipsa atque officia distinctio
+                        a quas consequuntur, quidem aspernatur laboriosam."
+                    </p>
+                    <h3 class="font-semibold text-gray-700">Roger Waters</h3>
+                    <h6 class="text-[13px]">Head of Design</h6>
+                </div>
+            </div>
+        </section>
+        <!---------  Testimonial Area End  --------->
+
+        <!---------  Career Area Start  --------->
+        <section id="career" class="py-24 bg-gray-100">
+            <div class="container text-center">
+                <h2 class="title-text">Careers at Mosto</h2>
+                <p class="max-w-[600px] mx-auto text-center pb-12">
+                    Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Cupiditate tempore eaque placeat facere
+                    aperiam conseq uuntur perfe rendis accusamus velit.
+                </p>
+                <div class="flex gap-8 justify-between max-w-[850px] mx-auto flex-col md:flex-row">
+                    <!-- single address -->
+                    <div class="flex-grow text-center">
+                        <h3 class="text-xl font-semibold text-gray-700 pb-4">Dublin</h3>
+                        <div class="flex flex-col gap-3">
+                            <a href="#" class="hover:text-black duration-300">Head of Marketing</a>
+                            <a href="#" class="hover:text-black duration-300">Ux Designer</a>
+                            <a href="#" class="hover:text-black duration-300">Senior Programmer</a>
+                            <a href="#" class="hover:text-black duration-300">Mobile Ui Designer</a>
+                            <a href="#" class="hover:text-black duration-300">Lead Product Designer</a>
+                        </div>
+                    </div>
+                    <!-- single address -->
+                    <div class="flex-grow text-center">
+                        <h3 class="text-xl font-semibold text-gray-700 pb-4">Amsterdam</h3>
+                        <div class="flex flex-col gap-3">
+                            <a href="#" class="hover:text-black duration-300">Head of Operations</a>
+                            <a href="#" class="hover:text-black duration-300">Mobile Engineer</a>
+                            <a href="#" class="hover:text-black duration-300">Senior Programmer</a>
+                            <a href="#" class="hover:text-black duration-300">Animation Designer</a>
+                        </div>
+                    </div>
+                    <!-- single address -->
+                    <div class="flex-grow text-center">
+                        <h3 class="text-xl font-semibold text-gray-700 pb-4">Mexico City</h3>
+                        <div class="flex flex-col gap-3">
+                            <a href="#" class="hover:text-black duration-300">Head of Motion Design</a>
+                            <a href="#" class="hover:text-black duration-300">Ux Designer</a>
+                            <a href="#" class="hover:text-black duration-300">Senior UI Designer</a>
+                            <a href="#" class="hover:text-black duration-300">Graphics Engineer</a>
+                            <a href="#" class="hover:text-black duration-300">Backend Engineer</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn mt-8">Career at Mosto <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </section>
+        <!---------  Career Area End  --------->
+
+        <!---------  Blog Area Start  --------->
+        <section id="blog" class="py-24">
+            <div class="container">
+                <h2 class="title-text">Form the Blog</h2>
+                <!-- blog boxes -->
+                <div class="flex flex-wrap gap-12 md:gap-8">
+                    <!-- single Blog -->
+                    <div
+                        class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                    >
+                        <img src="./img/Item4.png" alt="blog picture" class="w-full" />
+                        <div class="p-8 pt-4 cursor-pointer">
+                            <h3 class="text-xl text-gray-700 font-bold mt-4">Make your team a Design driven company</h3>
+                            <p class="mt-4">Lorem ipsum dolor sit amet consec com break tetur adipi sicing elit.</p>
+                            <div class="mt-4 flex gap-2 items-center">
+                                <img src="./img/Image.jpg" alt="" class="rounded-full inline-block" />
+                                <span>Jhon Doe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single Blog -->
+                    <div
+                        class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                    >
+                        <img src="./img/Item5.png" alt="blog picture" class="w-full" />
+                        <div class="p-8 pt-4 cursor-pointer">
+                            <h3 class="text-xl text-gray-700 font-bold mt-4">Make your team a Design driven company</h3>
+                            <p class="mt-4">Lorem ipsum dolor sit amet consec com break tetur adipi sicing elit.</p>
+                            <div class="mt-4 flex gap-2 items-center">
+                                <img src="./img/Image.jpg" alt="" class="rounded-full inline-block" />
+                                <span>Jhon Doe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single Blog -->
+                    <div
+                        class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                    >
+                        <img src="./img/Item1.png" alt="blog picture" class="w-full" />
+                        <div class="p-8 pt-4 cursor-pointer">
+                            <h3 class="text-xl text-gray-700 font-bold mt-4">Make your team a Design driven company</h3>
+                            <p class="mt-4">Lorem ipsum dolor sit amet consec com break tetur adipi sicing elit.</p>
+                            <div class="mt-4 flex gap-2 items-center">
+                                <img src="./img/Image.jpg" alt="" class="rounded-full inline-block" />
+                                <span>Jhon Doe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------  Blog Area End  --------->
+
+        <!---------  Get In Touch Area Start  --------->
+        <section id="getintouch" class="py-36 bg-[url('./../img/calltoaction.png')] bg-no-repeat bg-cover bg-center">
+            <div class="container text-center">
+                <h2 class="text-white text-3xl font-bold mb-4">Want to hire us?</h2>
+                <p class="max-w-[650px] mx-auto text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis alias consectetur voluptatem
+                    hic explicabo corporis beatae deleniti excepturi, mollitia iste, aliquam atque nam ipsam minima id
+                    provident reprehenderit voluptate?
+                </p>
+                <a href="#" class="btn mt-8">Get in Touch <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </section>
+        <!---------  Get In Touch Area End  --------->
+
+        <!---------  Footer Area Start  --------->
+        <footer class="pb-8 pt-12 bg-gray-950">
+            <div class="container">
+                <!-- footer-top -->
+                <div class="text-center">
+                    <img src="./img/logo.png" alt="logo" class="inline-block pb-4" />
+                    <p class="max-w-[650px] mx-auto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis id a praesentium.
+                        Tenetur, labor.
+                    </p>
+                </div>
+
+                <!-- footer-middle -->
+                <div class="flex justify-between max-w-[950px] mx-auto mt-8 flex-wrap text-center md:text-left gap-8">
+                    <div class="flex flex-col basis-[100%] flex-grow sm:basis-[40%] md:basis-[20%]">
+                        <h4 class="font-bold pb-2">Locations</h4>
+                        <p>345 Main St. San Francisco, CA</p>
+                        <p>13th Street. Seattle, WA</p>
+                    </div>
+                    <div class="flex flex-col gap-3 basis-[100%] flex-grow sm:basis-[40%] md:basis-[20%]">
+                        <a href="#" class="hover:text-white duration-300">Business</a>
+                        <a href="#" class="hover:text-white duration-300">Quick Links</a>
+                        <a href="#" class="hover:text-white duration-300">Faqs.</a>
+                    </div>
+                    <div class="flex flex-col gap-3 basis-[100%] flex-grow sm:basis-[40%] md:basis-[20%]">
+                        <a href="#" class="hover:text-white duration-300">Portfolio</a>
+                        <a href="#" class="hover:text-white duration-300">Careers</a>
+                        <a href="#" class="hover:text-white duration-300">Clients</a>
+                    </div>
+                    <div class="flex flex-col gap-3 basis-[100%] flex-grow sm:basis-[40%] md:basis-[20%]">
+                        <a href="#" class="hover:text-white duration-300">Privacy Policy</a>
+                        <a href="#" class="hover:text-white duration-300">Terms and Conditions</a>
+                        <a href="#" class="hover:text-white duration-300">Quick Support</a>
+                    </div>
+                </div>
+
+                <!-- footer bottom -->
+                <div class="">
+                    <!-- social links -->
+                    <div class="flex gap-4 justify-center mt-12">
+                        <i
+                            class="ri-facebook-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                        ></i>
+                        <i
+                            class="ri-twitter-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                        ></i>
+                        <i
+                            class="ri-linkedin-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                        ></i>
+                        <i
+                            class="ri-github-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                        ></i>
+                    </div>
+
+                    <!-- bottom text -->
+                    <p class="text-center mt-12 border-t border-gray-800 pt-8">All rights reserved. &copy;2023.</p>
+                </div>
+            </div>
+        </footer>
+        <!---------  Footer Area End  --------->
 
         <!---------  all javascript here  --------->
         <script src="./js/main.js"></script>

@@ -1,8 +1,5 @@
-1693379473743 - Method:GET - IP:::ffff:127.0.0.1
-1693379485074 - Method:POST - IP:::ffff:127.0.0.1
-1693379530969 - Method:PUT - IP:::ffff:127.0.0.1
-1693379606700 - Method:DELETE - IP:::ffff:127.0.0.1
-1693379609106 - Method:DELETE - IP:::ffff:127.0.0.1
-1693379937224 - Method:GET - IP:::ffff:127.0.0.1
-1693379938003 - Method:GET - IP:::ffff:127.0.0.1
-1693379942875 - Method:POST - IP:::ffff:127.0.0.1
+
+1693380461995 - Url:/ - Method:POST - IP:::ffff:127.0.0.1
+1693380490355 - Url:/about - Method:POST - IP:::ffff:127.0.0.1
+1693380503691 - Url:/ - Method:GET - IP:::ffff:127.0.0.1
+1693380504084 - Url:/ - Method:GET - IP:::ffff:127.0.0.1

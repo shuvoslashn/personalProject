@@ -23,7 +23,7 @@ const Hero = () => {
                         iste mollitia rem nemo dolor, officia culpa nobis, assumenda delectus similique voluptates?
                         Eaque corrupti laboriosam quasi nisi.
                     </p>
-                    <div className='flex gap-4 mt-8 justify-center md:justify-start'>
+                    <div className='flex gap-4 mt-8 justify-center md:justify-start flex-col sm:flex-row'>
                         <button
                             onClick={handleIncrease}
                             className='inline-block py-3 text-[14px] font-bold px-8 bg-blue-600 hover:bg-blue-700 duration-300 text-white uppercase shadow-lg rounded-full shadow-blue-300'

@@ -2,9 +2,18 @@ const http = require('http');
 const fs = require('fs');
 
 const myServer = http.createServer((req, res) => {
-    const log = `${Date.now()} - Method:${req.method} - IP:${req.socket.localAddress}\n`;
+    const log = `${Date.now()} - Url:${req.url} - Method:${req.method} - IP:${req.socket.localAddress}\n`;
     fs.appendFile('log.txt', log, (err, data) => {
-        res.end('req done. log created');
+        switch (req.url) {
+            case '/':
+                res.end('Homepage');
+                break;
+            case '/about':
+                res.end('I am Shuvo');
+                break;
+            default:
+                res.end('404 Not Found');
+        }
     });
 });
 
