@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-poppins leading-7 text-gray-500;
+    }
+}
+@layer components {
+    .menu-item {
+        @apply text-gray-300 font-medium duration-300 hover:text-white relative after:absolute after:w-0 after:h-1 after:bg-white after:bottom-0 after:left-0 hover:after:w-full after:duration-300;
+    }
+    .btn {
+        @apply text-white inline-block py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-600 rounded-full duration-300 shadow-xl shadow-red-600/30 !important;
+    }
+    .btn-sm {
+        @apply text-white inline-block py-2 px-6 bg-red-500 text-white font-medium hover:bg-red-600 rounded-full duration-300 shadow-xl shadow-red-600/30 !important;
+    }
+}
+
+@layer utilities {
+    .title-text {
+        @apply text-3xl relative after:absolute after:-bottom-5 after:-translate-x-1/2 after:left-1/2 after:w-16 after:h-1 after:bg-red-500 after:rounded-full mb-12 font-bold text-gray-800 text-center;
+    }
+    .hamburger.open div {
+        @apply opacity-0 duration-300;
+    }
+    .hamburger.open div:first-child {
+        @apply opacity-100 rotate-45;
+    }
+    .hamburger.open div:last-child {
+        @apply opacity-100 -rotate-45 -mt-[18px];
+    }
+    .menu.mobile {
+        @apply w-full h-screen absolute top-0 left-0 flex-col justify-center bg-gray-900;
+    }
+    .nav-bg {
+        background-color: #000;
+    }
+}
+
+.nav-bg {
+    position: fixed;
+    z-index: 999;
+    background: #000e;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}

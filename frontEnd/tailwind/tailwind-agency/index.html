@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- remix icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- main css -->
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body class="">
+        <!---------  Header Area Start  --------->
+        <header class="absolute w-full">
+            <div class="container">
+                <nav class="flex items-center justify-between py-3 h-20">
+                    <!-- logo -->
+                    <img src="./img/logo.png" alt="logo" />
+
+                    <!-- menu -->
+                    <ul class="hidden md:flex items-center gap-6 menu duration-300">
+                        <li><a href="#" class="menu-item py-2">Home</a></li>
+                        <li><a href="#" class="menu-item py-2">About</a></li>
+                        <li><a href="#" class="menu-item py-2">Projects</a></li>
+                        <li><a href="#" class="menu-item py-2">Expertise</a></li>
+                        <li><a href="#" class="menu-item py-2">Blog</a></li>
+                        <li><a href="#" class="btn-sm">Contact Us</a></li>
+                    </ul>
+
+                    <!-- hamburger -->
+                    <div
+                        class="flex md:hidden flex-col gap-[7px] cursor-pointer p-3 hamburger"
+                        onclick="hamburgerToggle()"
+                    >
+                        <div class="h-[2px] w-[24px] bg-white"></div>
+                        <div class="h-[2px] w-[24px] bg-white"></div>
+                        <div class="h-[2px] w-[24px] bg-white"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!---------  Header Area End  --------->
+
+        <!---------  Hero Area Start  --------->
+        <section class="w-full h-screen bg-[url('./../img/heroBG.png')] bg-center bg-cover bg-no-repeat">
+            <div class="bg-gray-900/50 w-full h-full">
+                <div class="container w-full h-full flex flex-col justify-center items-center text-center">
+                    <div class="max-w-[650px]">
+                        <h4 class="text-white font-semibold tracking-[5px] mb-3">We Create Digital Products</h4>
+                        <h1 class="text-white text-4xl font-bold">Introduce Our Creative Agency.</h1>
+                        <p class="text-[#fff7] mt-4 mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quia quos repellendus
+                            cum volu vel neque modi earum expedita.
+                        </p>
+                        <a href="#" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------  Hero Area End  --------->
+
+        <!---------  About Area Start  --------->
+        <section id="about" class="py-12 md:py-24">
+            <div class="container">
+                <div class="max-w-[850px] mx-auto text-center">
+                    <h2 class="title-text">Welcome to our agency</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores nostrum laborum ipsum, magnam
+                        pariatur alias ullam dolorum dolorem mollitia veniam velit voluptate quas sapiente explicabo
+                        repellat illum quia laudantium repellendus.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!---------  About Area End  --------->
+
+        <!---------  Project Area Start  --------->
+        <section id="projects" class="py-12 md:py-24 bg-gray-100">
+            <div class="container">
+                <h2 class="title-text">Featured Projects</h2>
+                <!-- project boxs -->
+                <div class="flex gap-4 flex-wrap">
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item1.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project One</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item2.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Two</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item3.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Three</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item4.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Four</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item5.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Five</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+
+                    <!-- project single box start -->
+                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                        <img src="./img/Item6.png" alt="project one" class="w-full" />
+                        <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
+                            <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Six</h3>
+                            <p>Lorem ipsum dolor, sit amet consec tetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <!-- project single box end -->
+                </div>
+            </div>
+        </section>
+        <!---------  Project Area End  --------->
+
+        <!---------  all javascript here  --------->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
