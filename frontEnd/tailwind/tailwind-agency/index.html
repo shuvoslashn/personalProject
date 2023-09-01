@@ -7,7 +7,7 @@
         <!-- remix icon -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
         <!-- animate css cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- main css -->
         <link rel="stylesheet" href="./css/main.css" />
     </head>
@@ -21,14 +21,14 @@
 
                     <!-- menu -->
                     <ul class="hidden md:flex items-center gap-6 menu duration-300">
-                        <li><a href="#home" class="menu-item py-2">Home</a></li>
-                        <li><a href="#about" class="menu-item py-2">About</a></li>
-                        <li><a href="#projects" class="menu-item py-2">Projects</a></li>
+                        <li><a href="#home" class="mi menu-item py-2">Home</a></li>
+                        <li><a href="#about" class="mi menu-item py-2">About</a></li>
+                        <li><a href="#projects" class="mi menu-item py-2">Projects</a></li>
                         <li>
-                            <a href="#testimonial" class="menu-item py-2">Testimonial</a>
+                            <a href="#testimonial" class="mi menu-item py-2">Testimonial</a>
                         </li>
-                        <li><a href="#blog" class="menu-item py-2">Blog</a></li>
-                        <li><a href="#getintouch" class="btn-sm">Get In Touch</a></li>
+                        <li><a href="#blog" class="mi menu-item py-2">Blog</a></li>
+                        <li><a href="#getintouch" class="mi btn-sm">Get In Touch</a></li>
                     </ul>
 
                     <!-- hamburger -->
@@ -50,15 +50,21 @@
             <div class="bg-gray-900/50 w-full h-full">
                 <div class="container w-full h-full flex flex-col justify-center items-center text-center">
                     <div class="max-w-[650px]">
-                        <h4 class="text-white font-semibold tracking-[5px] mb-3 leading-5 uppercase animate__fadeInUp">
+                        <h4 class="text-white font-semibold tracking-[5px] mb-3 leading-5 uppercase" data-aos="fade-up">
                             We Create Digital Products
                         </h4>
-                        <h1 class="leading-[140%] text-white text-4xl font-bold">Introduce Our Creative Agency.</h1>
-                        <p class="text-[#fff7] mt-4 mb-6">
+                        <h1
+                            class="leading-[140%] text-white text-4xl font-bold"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                        >
+                            Introduce Our Creative Agency.
+                        </h1>
+                        <p class="text-[#fff7] mt-4 mb-6" data-aos="fade-up" data-aos-delay="400">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quia quos repellendus
                             cum volu vel neque modi earum expedita.
                         </p>
-                        <a href="#" class="btn">Get Started</a>
+                        <a href="#" class="btn" data-aos="fade-up" data-aos-delay="600">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -68,9 +74,9 @@
         <!---------  About Area Start  --------->
         <section id="about" class="py-24">
             <div class="container">
-                <div class="max-w-[850px] mx-auto text-center">
+                <div class="max-w-[850px] mx-auto text-center" data-aos="fade-up">
                     <h2 class="title-text">Welcome to our agency</h2>
-                    <p>
+                    <p class=" ">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores nostrum laborum ipsum, magnam
                         pariatur alias ullam dolorum dolorem mollitia veniam velit voluptate quas sapiente explicabo
                         repellat illum quia laudantium repellendus.
@@ -83,11 +89,14 @@
         <!---------  Project Area Start  --------->
         <section id="projects" class="py-24 bg-gray-100">
             <div class="container">
-                <h2 class="title-text">Featured Projects</h2>
+                <h2 class="title-text" data-aos="zoom-in">Featured Projects</h2>
                 <!-- project boxs -->
                 <div class="flex gap-4 flex-wrap">
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                    >
                         <img src="./img/Item1.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project One</h3>
@@ -97,7 +106,11 @@
                     <!-- project single box end -->
 
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
                         <img src="./img/Item2.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Two</h3>
@@ -107,7 +120,11 @@
                     <!-- project single box end -->
 
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
                         <img src="./img/Item3.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Three</h3>
@@ -117,7 +134,11 @@
                     <!-- project single box end -->
 
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    >
                         <img src="./img/Item4.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Four</h3>
@@ -127,7 +148,11 @@
                     <!-- project single box end -->
 
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                        data-aos-delay="800"
+                    >
                         <img src="./img/Item5.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Five</h3>
@@ -137,7 +162,11 @@
                     <!-- project single box end -->
 
                     <!-- project single box start -->
-                    <div class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow">
+                    <div
+                        class="relative overflow-hidden group cursor-pointer basis-[100%] md:basis-[30%] flex-grow"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                    >
                         <img src="./img/Item6.png" alt="project one" class="w-full" />
                         <div class="absolute -bottom-36 left-0 bg-white py-5 px-6 group-hover:bottom-0 duration-300">
                             <h3 class="text-xl font-semibold text-gray-600 pb-2">Project Six</h3>
@@ -154,7 +183,7 @@
         <section id="testimonial" class="py-24">
             <div class="container flex flex-col gap-8 md:flex-row">
                 <!-- single testimonial -->
-                <div class="pb-8 md:pb-0 text-center md:text-left">
+                <div class="pb-8 md:pb-0 text-center md:text-left" data-aos="zoom-in-left">
                     <img src="./img/stripe.png" alt="stripe" class="mx-auto md:mx-0" />
                     <p class="py-4">
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt est animi nemo autem
@@ -165,7 +194,7 @@
                     <h6 class="text-[13px]">Head of Design</h6>
                 </div>
                 <!-- single testimonial -->
-                <div class="text-center md:text-left">
+                <div class="text-center md:text-left" data-aos="zoom-in-right">
                     <img src="./img/dribbble.png" alt="stripe" class="mx-auto md:mx-0" />
                     <p class="py-4">
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt est animi nemo autem
@@ -235,6 +264,7 @@
                     <!-- single Blog -->
                     <div
                         class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                        data-aos="fade-up"
                     >
                         <img src="./img/Item4.png" alt="blog picture" class="w-full" />
                         <div class="p-8 pt-4 cursor-pointer">
@@ -249,6 +279,7 @@
                     <!-- single Blog -->
                     <div
                         class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                        data-aos="fade-up"
                     >
                         <img src="./img/Item5.png" alt="blog picture" class="w-full" />
                         <div class="p-8 pt-4 cursor-pointer">
@@ -263,6 +294,7 @@
                     <!-- single Blog -->
                     <div
                         class="basis-[100%] lg:basis-[30%] shadow-2xl shadow-gray-200 hover:shadow-gray-300 duration-300"
+                        data-aos="fade-up"
                     >
                         <img src="./img/Item1.png" alt="blog picture" class="w-full" />
                         <div class="p-8 pt-4 cursor-pointer">
@@ -281,7 +313,7 @@
 
         <!---------  Get In Touch Area Start  --------->
         <section id="getintouch" class="py-36 bg-[url('./../img/calltoaction.png')] bg-no-repeat bg-cover bg-center">
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-up">
                 <h2 class="text-white text-3xl font-bold mb-4">Want to hire us?</h2>
                 <p class="max-w-[650px] mx-auto text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis alias consectetur voluptatem
@@ -333,18 +365,26 @@
                 <div class="">
                     <!-- social links -->
                     <div class="flex gap-4 justify-center mt-12">
-                        <i
-                            class="ri-facebook-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
-                        ></i>
-                        <i
-                            class="ri-twitter-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
-                        ></i>
-                        <i
-                            class="ri-linkedin-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
-                        ></i>
-                        <i
-                            class="ri-github-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
-                        ></i>
+                        <a href="#"
+                            ><i
+                                class="ri-facebook-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="ri-twitter-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="ri-linkedin-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                            ></i
+                        ></a>
+                        <a href="#"
+                            ><i
+                                class="ri-github-fill w-8 h-8 bg-red-500 text-white flex justify-center items-center rounded-full"
+                            ></i
+                        ></a>
                     </div>
 
                     <!-- bottom text -->
@@ -355,6 +395,7 @@
         <!---------  Footer Area End  --------->
 
         <!---------  all javascript here  --------->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
