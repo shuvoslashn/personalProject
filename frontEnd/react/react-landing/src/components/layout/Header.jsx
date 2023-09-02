@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <header className='py-4 bg-white shadow-2xl shadow-black/10 fixed w-full'>
+        <header className='py-4 bg-white fixed w-full'>
             <div className='container flex justify-between items-center'>
                 {/* logo */}
                 <h3 className='text-2xl font-semibold'>BatterStack.</h3>
@@ -27,19 +27,19 @@ const Header = () => {
                         toggle ? 'left-0 opacity-100 visible' : 'opacity-0 invisible -left-96 md:visible md:opacity-100'
                     } flex flex-col md:flex-row absolute md:static top-[64px] w-full h-[100vh] md:h-auto md:w-auto bg-gray-900 md:bg-transparent text-gray-400 md:text-gray-800 font-semibold pt-8 md:pt-0 gap-2 duration-500 transition-all text-center md:text-left`}
                 >
-                    <a className='px-8 md:px-4 py-2' href='/'>
+                    <a className='px-8 md:px-4 py-2 inline-block' href='/'>
                         Home
                     </a>
-                    <a className='px-8 md:px-4 py-2' href='/'>
+                    <a className='px-8 md:px-4 py-2 inline-block' href='/'>
                         About
                     </a>
-                    <a className='px-8 md:px-4 py-2' href='/'>
+                    <a className='px-8 md:px-4 py-2 inline-block' href='/'>
                         Features
                     </a>
-                    <a className='px-8 md:px-4 py-2' href='/'>
+                    <a className='px-8 md:px-4 py-2 inline-block' href='/'>
                         Services
                     </a>
-                    <a className='px-8 md:px-4 py-2' href='/'>
+                    <a className='px-8 md:px-4 py-2 inline-block' href='/'>
                         Contact
                     </a>
                 </nav>
