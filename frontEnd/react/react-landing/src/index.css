@@ -2,3 +2,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+        @apply transition-all duration-300;
+    }
+    p {
+        line-height: 165%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgb(31, 41, 55);
+    }
+    body.dark h1,
+    body.dark h2,
+    body.dark h3,
+    body.dark h4,
+    body.dark h5,
+    body.dark h6 {
+        color: white;
+    }
+    .font-outline-1 {
+        -webkit-text-stroke: 1px black;
+    }
+    .font-outline-2 {
+        -webkit-text-stroke: 2px black;
+    }
+    .font-outline-white-1 {
+        -webkit-text-stroke: 1px white;
+    }
+    .font-outline-white-2 {
+        -webkit-text-stroke: 2px white;
+    }
+    .btn {
+        @apply px-8 py-4 bg-purple-600 text-white font-semibold duration-500 hover:bg-purple-800 shadow-2xl shadow-purple-600/30 hover:shadow-purple-900;
+    }
+    .btn-outline {
+        @apply px-8 py-4 border border-purple-600 dark:hover:border-transparent dark:border-gray-50 text-purple-600 dark:text-gray-50 font-semibold duration-500 hover:bg-purple-800 shadow-2xl shadow-purple-600/30 hover:shadow-purple-900 hover:text-white;
+    }
+}
