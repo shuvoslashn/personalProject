@@ -5,23 +5,26 @@ const Hero = () => {
     return (
         <section className=' h-screen pt-[70px] bg-white dark:bg-gray-900 w-full'>
             <div className='container w-full h-full flex justify-center items-center'>
-                <div className='relative text-center max-w-[740px]'>
+                <div className='relative text-center max-w-[940px]'>
                     {/* Effects */}
                     <div className='w-40 h-40 bg-purple-600/80 rounded-full blur-3xl absolute -top-20 left-0 -z-0 animate-pulse'></div>
                     <div className='w-40 h-40 bg-rose-600/40 rounded-full blur-3xl absolute -bottom-20 -right-0 -z-0 animate-pulse'></div>
                     <img
                         src={rotateLogo}
                         alt='rotate text'
-                        className='w-40 absolute right-0 -top-32 animate-spin-slow'
+                        className='w-40 absolute right-24 -top-32 animate-spin-slow'
                     />
 
                     {/* Elements */}
-                    <h3 className='text-xl font-bold text-purple-600 pb-3'>Welcome to BatterStack</h3>
-                    <h1 className='text-3xl md:text-6xl font-extrabold'>
+                    <h3 className='text-xl md:text-3xl font-bold text-purple-600 pb-3'>Welcome to BatterStack</h3>
+                    <h1 className='text-4xl md:text-6xl lg:text-8xl font-extrabold'>
                         <span className='font-outline-1 dark:font-outline-white-1 text-transparent'>World of </span>{' '}
                         <span>Machine</span>
                     </h1>
-                    <p className='my-4 text-gray-800 dark:text-gray-400'>
+                    <p
+                        style={{ lineHeight: '180%' }}
+                        className='text-md md:text-xl my-4 text-gray-800 dark:text-gray-400'
+                    >
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquam qui excepturi officia
                         veniam nostrum nobis voluptatem adipisci.
                     </p>
