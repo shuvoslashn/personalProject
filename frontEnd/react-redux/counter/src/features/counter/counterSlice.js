@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { toast } from 'react-toastify';
 
 export const counterSlice = createSlice({
     name: 'counter',
@@ -8,7 +9,12 @@ export const counterSlice = createSlice({
             state.count += 1;
         },
         komani: (state) => {
-            state.count -= 1;
+            // state > 0 ? (state.count -= 1) : ;
+            if (state.count > 0) {
+                state.count -= 1;
+            } else {
+                toast('আরে ভাই, ০ থাইক্কা কিবায় কমাবো?');
+            }
         },
         reset: (state) => {
             state.count = 0;
