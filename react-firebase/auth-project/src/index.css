@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-poppins;
+    }
+    body {
+        @apply bg-zinc-900 text-zinc-400;
+    }
+    .inputbox {
+        @apply bg-zinc-800 text-white px-4 py-3 w-full placeholder:text-zinc-600 rounded-md;
+    }
+}
