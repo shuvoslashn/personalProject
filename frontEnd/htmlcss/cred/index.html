@@ -3,8 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>CRED - pay your credit card bills & earn rewords</title>
+        <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon" />
+        <!-- Remix Icon CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <!-- Tailwind CSS CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Main StyleSheets -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="bg-[#101010]">
@@ -17,19 +25,28 @@
                 <img src="./assets/cred-logo.png" class="h-20" alt="cred" />
 
                 <!-- navigation -->
-                <nav>
-                    <ul class="flex gap-8">
+                <nav class="flex items-center">
+                    <div class="visible md:invisible">
+                        <i class="ri-menu-3-line text-4xl open"></i>
+                        <i
+                            class="ri-close-line text-4xl close z-[9999] relative"
+                        ></i>
+                    </div>
+                    <ul
+                        id="nav"
+                        class="invisible flex flex-col gap-8 absolute md:visible md:static md:flex-row md:pt-0 md:pt-0 left-[1000px] duration-300 top-0 w-full h-full bg-[#101010aa] backdrop-blur pt-24 pl-8"
+                    >
                         <li>
                             <a
                                 href="#"
-                                class="relative before:absolute before:left-0 before:-bottom-2 before:w-0 before:h-[1px] before:bg-white before:rounded-full before:duration-300 before:hover:w-full"
+                                class="text-2xl relative before:absolute before:left-0 before:-bottom-2 before:w-0 before:h-[1px] before:bg-white before:rounded-full before:duration-300 before:hover:w-full"
                                 >CRED pay</a
                             >
                         </li>
                         <li>
                             <a
                                 href="#"
-                                class="relative before:absolute before:left-0 before:-bottom-2 before:w-0 before:h-[1px] before:bg-white before:rounded-full before:duration-300 before:hover:w-full"
+                                class="text-2xl relative before:absolute before:left-0 before:-bottom-2 before:w-0 before:h-[1px] before:bg-white before:rounded-full before:duration-300 before:hover:w-full"
                                 >credit score check</a
                             >
                         </li>
