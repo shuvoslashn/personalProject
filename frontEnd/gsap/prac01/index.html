@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Anybody:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-zinc-900 text-white font-[Anybody]">
+        <!-- navbar start -->
+        <nav id="nav" class="flex justify-between items-center px-16 py-5">
+            <h3 class="text-3xl">Animate.</h3>
+
+            <ul class="flex gap-8 text-xl">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+            </ul>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- Hero Start -->
+        <section class="py-24 flex flex-col px-16 text-center relative">
+            <div
+                id="box"
+                class="w-60 h-60 bg-gradient-to-r from-teal-500 to-blue-500 absolute top-0 left-24 rounded-full blur-3xl animate-spin opacity-70"
+            ></div>
+            <div class="relative">
+                <h1 id="at" class="text-9xl font-black">
+                    <span id="title1" class="text-stroke">Animated</span>
+                    <span id="title2">Website</span>
+                </h1>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- js here -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

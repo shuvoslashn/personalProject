@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-poppins;
+        box-sizing: border-box;
+    }
+    body {
+        @apply bg-zinc-900 text-zinc-500 p-8;
+    }
+    .btn {
+        @apply font-extralight border w-20 h-20 text-4xl m-2 rounded-md border-zinc-600 focus:border-zinc-200 focus:text-white focus:bg-blue-500/10;
+    }
+}
