@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic Crud</title>
+        <link href="https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
+    <body class="font-[Unbounded]">
+        <h1 class="text-4xl font-black mb-4 text-center mt-8">Social Media</h1>
+        <div class="container mx-auto px-8">
+            <!-- form start -->
+            <form id="form">
+                <p class="py-3">Write your post here</p>
+                <textarea
+                    class="bg-zinc-100 min-h-40 w-full px-6 py-4 rounded-xl border"
+                    placeholder="Eg. This is beautiful place"
+                ></textarea>
+                <button
+                    class="px-8 py-3 mt-4 bg-indigo-500 text-white shadow-xl shadow-indigo-500/30 hover:bg-indigo-600 duration-300 rounded-xl"
+                >
+                    Post Now
+                </button>
+            </form>
+            <!-- form end -->
+
+            <!-- post start -->
+            <div class="py-8" id="posts">
+                <div id="post" class="flex justify-between items-center px-6 py-2 bg-indigo-50">
+                    <p>lorem ipsum</p>
+                    <div class="flex text-2xl gap-4">
+                        <i class="ri-edit-2-line cursor-pointer hover:text-indigo-500 duration-300"></i>
+                        <i class="ri-delete-bin-line cursor-pointer hover:text-indigo-500 duration-300"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post end -->
+        </div>
+
+        <!-- all js here -->
+        <script></script>
+    </body>
+</html>
