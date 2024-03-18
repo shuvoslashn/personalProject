@@ -15,11 +15,13 @@
             <form id="form">
                 <p class="py-3">Write your post here</p>
                 <textarea
+                    id="input"
                     class="bg-zinc-100 min-h-40 w-full px-6 py-4 rounded-xl border"
                     placeholder="Eg. This is beautiful place"
                 ></textarea>
+                <p id="msg" class="text-rose-500 py-2"></p>
                 <button
-                    class="px-8 py-3 mt-4 bg-indigo-500 text-white shadow-xl shadow-indigo-500/30 hover:bg-indigo-600 duration-300 rounded-xl"
+                    class="px-8 py-3 bg-indigo-500 text-white shadow-xl shadow-indigo-500/30 hover:bg-indigo-600 duration-300 rounded-xl"
                 >
                     Post Now
                 </button>
@@ -40,6 +42,36 @@
         </div>
 
         <!-- all js here -->
-        <script></script>
+        <script>
+            let data = {};
+            let form = document.getElementById("form");
+            let input = document.getElementById("input");
+            let msg = document.getElementById("msg");
+
+            let acceptData = () => {
+                data.text = input.value;
+                console.log(data);
+                createPost();
+            };
+
+            let formValidation = () => {
+                if (input.value.trim() === "") {
+                    msg.innerHTML = "Posts cannot be blank";
+                } else {
+                    alert("Success");
+                    msg.innerHTML = "";
+                    acceptData();
+                }
+            };
+
+            let createPost = () => {
+                post.innerHTML = "new post created";
+            };
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                formValidation();
+            });
+        </script>
     </body>
 </html>
